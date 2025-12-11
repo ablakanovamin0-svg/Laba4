@@ -6,12 +6,29 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Класс обработки CSV файла
+ * с людьми в заданном формате
+ * @author ablakanovamin0-svg
+ * @version 1.0
+ */
 public class CSVProcessor {
     private List<Person> personList;
+
+    /**
+     * Конструктор объектов класса CSVProcessor уо умолчанию
+     */
     public CSVProcessor() {
         personList = new ArrayList<>();
     }
 
+    /**
+     * Обработка CSV файла в заданном формате
+     * и вывод списка людей из рассматриваемого файла
+     * @param path путь к CSV файлу в виде строки
+     * @return список людей
+     * @throws FileNotFoundException, если файл по введённому пути не найден
+     */
     public List<Person> process(String path) throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(path));
         String str = scanner.nextLine();

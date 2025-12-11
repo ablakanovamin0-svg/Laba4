@@ -1,0 +1,10 @@
+package org.example;
+
+public class Department {
+    private int ID;
+    private String name;
+    public Department(String _name) {
+        name = _name;
+        ID = (int) (_name.charAt(0) - 'A');
+    }
+}

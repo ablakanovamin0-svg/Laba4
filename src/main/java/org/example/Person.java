@@ -53,6 +53,6 @@ public class Person {
     }
     @Override
     public String toString() {
-        return "ID = " + ID + ", name = " + name + ", gender = " + gender + ", department = " + department + ", salary=  " + salary + ", birthdate: " + birthdate;
+        return "ID = " + ID + ", name = " + name + ", gender = " + gender + ", " + department + ", salary = " + salary + ", birthdate = " + birthdate;
     }
 }

@@ -19,6 +19,6 @@ public class Department {
     }
     @Override
     public String toString() {
-        return ID + ", " + name;
+        return "department ID = " + ID + ", department name = " + name;
     }
 }

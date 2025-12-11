@@ -33,4 +33,22 @@ public class Person {
     public String getBirthdate() {
         return birthdate;
     }
+    public void setID(int _ID) {
+        ID = _ID;
+    }
+    public void setName(String _name) {
+        name = _name;
+    }
+    public void setGender(String _gender) {
+        gender = _gender;
+    }
+    public void setDepartment(Department _department) {
+        department = _department;
+    }
+    public void setSalary(int _salary) {
+        salary = _salary;
+    }
+    public void setBirthdate(String _birthdate) {
+        birthdate = _birthdate;
+    }
 }

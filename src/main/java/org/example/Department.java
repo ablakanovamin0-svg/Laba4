@@ -13,4 +13,8 @@ public class Department {
     public String getName() {
         return name;
     }
+    public void setName(String _name) {
+        name = _name;
+        ID = (int) (_name.charAt(0) - 'A');
+    }
 }

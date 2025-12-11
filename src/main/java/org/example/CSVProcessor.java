@@ -11,6 +11,7 @@ public class CSVProcessor {
     public CSVProcessor() {
         personList = new ArrayList<>();
     }
+
     public List<Person> process(String path) throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(path));
         String str = scanner.nextLine();

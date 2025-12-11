@@ -17,4 +17,8 @@ public class Department {
         name = _name;
         ID = (int) (_name.charAt(0) - 'A');
     }
+    @Override
+    public String toString() {
+        return ID + ", " + name;
+    }
 }

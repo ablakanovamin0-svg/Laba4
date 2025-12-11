@@ -51,4 +51,8 @@ public class Person {
     public void setBirthdate(String _birthdate) {
         birthdate = _birthdate;
     }
+    @Override
+    public String toString() {
+        return "ID = " + ID + ", name = " + name + ", gender = " + gender + ", department = " + department + ", salary=  " + salary + ", birthdate: " + birthdate;
+    }
 }
